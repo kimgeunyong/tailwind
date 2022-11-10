@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="dist/output.css">
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        $("document").ready(function(){
+            const swiper = new Swiper(".slide",{
+
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="w-full overflow-hidden">
+        <div class="swiper slide w-full overflow-hidden">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/main1.jpg" alt="main">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/main2.jpg" alt="main">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/main3.jpg" alt="main">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="w-full bg-white fixed top-0 z-50 h-[50px]">
+            <div class="w-[1560px] h-full flex mx-auto justify-between items-center py-0 px-[2%]">
+                <div class="basis-[4.5%]">
+                    <ul class="flex text-[13px] justify-between">
+                        <li>언어</li>
+                        <li class="box-border pt-[10%]"><img src="images/Triangle 1.jpg" alt=""></li>
+                        <li>KOR</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="images/로고.jpg" alt="logo">
+                </div>
+                <div class="basis-[15%] flex justify-between">
+                    <span>고객서비스</span>
+                    <span>로그인</span>
+                    <span><img src="images/돋보기.jpg" alt="+"></span>
+                    <ul class="cursor-pointer">
+                        <li class="w-[30px] h-[2px] bg-black"></li>
+                        <li class="w-[30px] h-[2px] bg-black my-[7px]"></li>
+                        <li class="w-[30px] h-[2px] bg-black"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="w-full h-[405px] fixed left-0 top-0 overflow-hidden bg-white-500/75 z-50"></div>
+    </div>
+
+</body>
+</html>
